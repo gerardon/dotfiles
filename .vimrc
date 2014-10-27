@@ -44,6 +44,8 @@ endif
 
 
 map <S-Insert> <MiddleMouse>
+nmap s <Plug>(easymotion-s2)
+nmap t <Plug>(easymotion-t2)
 
 "Mapping para NERDTree
 map <C-T> :NERDTreeToggle<return>
