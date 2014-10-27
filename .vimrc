@@ -10,6 +10,26 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
 
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+
+Plugin 'edsono/vim-matchit'
+Plugin 'kien/ctrlp.vim'
+Plugin 'elzr/vim-json'
+Plugin 'bling/vim-airline'
+Plugin 'vim-scripts/python_match.vim'
+Plugin 'Lokaltog/vim-easymotion'
+
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-sleuth'
+
+Plugin 'hdima/python-syntax'
+
+" with sufficient thrust, pigs fly just fine
+Plugin 'jnurmine/Zenburn'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -132,19 +152,6 @@ map <C-M> mvggVG:s/<C-V><CR>//g<CR>`v
 "http://vim.wikia.com/wiki/Remove_unwanted_spaces#Automatically_removing_all_trailing_whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-"good tab completion - press <tab> to autocomplete if there's a character
-"previously
-function InsertTabWrapper()
-      let col = col('.') - 1
-      if !col || getline('.')[col - 1] !~ '\k'
-          return "\<tab>"
-      else
-          return "\<c-p>"
-      endif
-endfunction
-
-inoremap <C-tab> <c-r>=InsertTabWrapper()<cr>
-
 " Author: Bernardo Fontes <falecomigo@bernardofontes.net>
 " Website: http://www.bernardofontes.net
 " This code is based on this one: http://www.cmdln.org/wp-content/uploads/2008/10/python_ipdb.vim
@@ -193,14 +200,9 @@ def line_down():
 
 vim.command('map <C-Up> :py line_up()<cr>')
 vim.command('map <C-Down> :py line_down()<cr>')
-vim.command('map <C-I> :py set_breakpoint()<cr>')
-vim.command('map <C-P> :py remove_breakpoints()<cr>')
+#vim.command('map <C-I> :py set_breakpoint()<cr>')
+#vim.command('map <C-P> :py remove_breakpoints()<cr>')
 
 EOF
 
-map <C-S-Left> <c-w><
-map <C-S-Right> <c-w>>
-map <C-S-Up> <c-w>-
-map <C-S-Down> <c-w>+
-
-set statusline=%F%m%r%h%w%<\ %=(%04l,%04v)\ [%p%%]\ \ [loc=%L]
+"set statusline=%F%m%r%h%w%<\ %=(%04l,%04v)\ [%p%%]\ \ [loc=%L]
