@@ -16,7 +16,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'edsono/vim-matchit'
 Plugin 'kien/ctrlp.vim'
 Plugin 'elzr/vim-json'
-Plugin 'bling/vim-airline'
 Plugin 'vim-scripts/python_match.vim'
 Plugin 'Lokaltog/vim-easymotion'
 
@@ -26,6 +25,9 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sleuth'
 
 Plugin 'hdima/python-syntax'
+
+" statusline enhancer
+Plugin 'bling/vim-airline'
 
 " with sufficient thrust, pigs fly just fine
 Plugin 'jnurmine/Zenburn'
@@ -125,6 +127,7 @@ set cursorline
 set virtualedit=all
 set noswapfile
 set guifont=Ubuntu\ Mono\ 11,5
+set laststatus=2
 ":match Search '\%>80v.\+'
 
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
