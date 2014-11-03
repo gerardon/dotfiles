@@ -68,6 +68,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 "map <C-T> :NERDTreeToggle<return>
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$', 'bin$', 'lib$', 'local$', 'share$', 'include$', 'build$', 'public$']
 let NERDChristmasTree = 1
+command NTT NERDTreeToggle
 
 "closetag settings
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
@@ -137,6 +138,10 @@ autocmd BufWritePre * :%s/\s\+$//e
 "Mapping para code fold
 vmap <space> zf
 nmap <space> :call ToggleFold()<CR>
+
+"Cria uma versão capitalizada de comandos muito usados.
+command W w
+command Q q
 
 function ToggleFold()
    if foldlevel('.') == 0
