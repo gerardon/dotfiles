@@ -45,7 +45,7 @@ ZSH_THEME="kardan"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autoenv autopep8 battery colored-man colorize pep8 pip python virtualenv git)
+plugins=(autoenv autopep8 battery colored-man colorize pep8 pip python virtualenv virtualenvwrapper git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -78,3 +78,5 @@ export EDITOR=vim
 
 export VERT_DISABLE_PROMPT=true
 
+# Adding the correct python path to virtualenvwrapper
+export VIRTUALENVWRAPPER_PYTHON=/usr/sbin/python2.7

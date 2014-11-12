@@ -12,7 +12,7 @@
 set $mod Mod4
 
 # Wallpaper
-exec feh --bg-tile /home/gerardo/Pictures/tileable_wood_texture.png
+exec feh --bg-fill /home/gerardon/Imagens/Japanese-Art-Wallpapers-Wall-Art-Japan-Wallpaper-Paining.jpg
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -173,3 +173,9 @@ workspace 7 output VGA1
 workspace 8 output VGA1
 workspace 9 output VGA1
 workspace 10 output VGA1
+
+# Power management
+execalways xfce-power-manager
+
+# Fixes the keyboard layout for thinkpads
+execalways setxkbmap -model thinkpad60 -layout br
