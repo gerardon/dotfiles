@@ -71,15 +71,10 @@ export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/
 export TERM=xterm-256color
 
 # Loading autoenv
-source /usr/local/bin/activate.sh
+source /usr/bin/activate.sh
 
 # Setting vim as default editor
 export EDITOR=vim
 
 export VERT_DISABLE_PROMPT=true
 
-
-# Lang stuff
-export LANGUAGE=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
