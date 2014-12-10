@@ -58,6 +58,9 @@ filetype plugin indent on
 nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
 
+"Airline settings
+let g:airline_powerline_fonts = 1
+
 "YouCompleteMe settings
 let g:ycm_key_list_select_completion = ['<TAB>', '<C-n>']
 let g:ycm_key_list_previous_completion = ['<A-TAB>', '<C-p>']
@@ -69,6 +72,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$', 'bin$', 'lib$', 'local$', 'share$', 'include$', 'build$', 'public$']
 let NERDChristmasTree = 1
 command NTT NERDTreeToggle
+command Ntt NERDTreeToggle
 
 "closetag settings
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
