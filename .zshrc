@@ -82,3 +82,6 @@ export VERT_DISABLE_PROMPT=true
 export VIRTUALENVWRAPPER_PYTHON=/usr/sbin/python2.7
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# This is fucking annoying
+unset GREP_OPTIONS
