@@ -69,7 +69,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 
 "NERDTree settings
 "map <C-T> :NERDTreeToggle<return>
-let NERDTreeIgnore = ['\.pyc$', '\.pyo$', 'bin$', 'lib$', 'local$', 'share$', 'include$', 'build$', 'public$']
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 let NERDChristmasTree = 1
 command NTT NERDTreeToggle
 command Ntt NERDTreeToggle
